@@ -12,16 +12,16 @@ function SideBar() {
             className="basis-3/12 flex flex-col items-center text-black h-full rounded-tl-3xl rounded-bl-3xl"
             style={{ backgroundColor: "rgba(255,255,255,0.814)" }}>
             <div className="flex items-center justify-between relative mt-8 mb-7">
-                <Input />
+                <Input />  
                 <SearchButton />
             </div>
             {/* Weather Image */}
             <div>
-                {data && <WeatherImage {...data}/>}
+                {data && <WeatherImage {...data} />}
             </div>
             {/* Weather Information */}
             <div>
-                {data && <WeatherInformation {...data}/>}
+                {data && <WeatherInformation {...data} />}
             </div>
         </div>
     )
