@@ -1,6 +1,34 @@
-import Weather from "../../Assets/Weather.png";
+import WeatherInfo from "../../Interface/WeatherInfo";
+import clearNight from '../../Assets/clearNight.png';
+import DayCloudy from '../../Assets/partly-cloudy-day.png';
+import Rain from '../../Assets/Rain.png';
+import SunnyDay from '../../Assets/SunnyDay.png';
+import ClearDayNight from '../../Assets/ClearDayNight.png';
+import HotterSunny from '../../Assets/HotterSunny.png';
+import Mist from '../../Assets/Mist.png'
 
-function WeatherImage() {
+const getIcon = (condition: { text: string }) => {
+    if (condition.text === "Partly cloudy" || condition.text === "Overcast") {
+        return DayCloudy;
+    } else if (condition.text === "partly-cloudy-night") {
+        return clearNight;
+    } else if (condition.text === "Patchy rain nearby") {
+        return Rain;
+    } else if (condition.text === "clear-day") {
+        return SunnyDay;
+    } else if (condition.text === "clear-night") {
+        return ClearDayNight;
+    } else if (condition.text === "Mist") {
+        return Mist;
+    } else {
+        return HotterSunny;
+    }
+}
+
+function WeatherImage({ condition }: WeatherInfo) {
+
+    const Weather = getIcon(condition);
+
     return (
         <img
             src={Weather}

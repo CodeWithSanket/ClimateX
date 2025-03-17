@@ -17,7 +17,7 @@ function SideBar() {
             </div>
             {/* Weather Image */}
             <div>
-                <WeatherImage />
+                {data && <WeatherImage {...data}/>}
             </div>
             {/* Weather Information */}
             <div>
