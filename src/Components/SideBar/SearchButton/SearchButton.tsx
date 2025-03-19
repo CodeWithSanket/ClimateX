@@ -7,16 +7,15 @@ import DataContext from "../../../context/useDataContext";
 
 
 function SearchButtonIcon() {
-    const { locationValue, setLocationValue } = useContext(SearchContext);
+    const { locationValue, setLocationValue, inputValue, setInputValue } = useContext(SearchContext);
     const [isButtonClicked, setIsButtonClicked] = useState<boolean>(false);
     const { setData } = useContext(DataContext);
-    const [inputValue, setInputValue] = useState<string>("");
 
     const handleClick = () => {
         if (locationValue.length > 0) {
-            setInputValue(locationValue);
             setIsButtonClicked(true);
             setLocationValue("");
+            setInputValue(locationValue);
         }
     }
 

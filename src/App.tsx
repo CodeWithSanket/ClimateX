@@ -7,10 +7,11 @@ import DataContext from './context/useDataContext';
 
 function App() {
   const [locationValue, setLocationValue] = useState<string>("");
+  const [inputValue, setInputValue] = useState<string>("");
   const [data, setData] = useState<WeatherInfo | null>(null);
 
   return (
-    <SearchContext.Provider value={{ locationValue, setLocationValue }}>
+    <SearchContext.Provider value={{ locationValue, setLocationValue, inputValue, setInputValue }}>
       <DataContext.Provider value={{ data, setData }}>
         <Home />
       </DataContext.Provider>
