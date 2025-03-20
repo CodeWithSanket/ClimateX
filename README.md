@@ -1,3 +1,9 @@
+![Screenshot](https://raw.githubusercontent.com/CodeWithSanket/ClimateX/refs/heads/main/src/assets/WeatherScreenshot.jpeg)
+
+
+
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
