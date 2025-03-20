@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import ActiveContext from "../../context/useActiveContext";
 
 function UpperNavBar() {
 
-    const [isActive, setIsActive] = useState<boolean>(true);
     const [isColour, setIsColour] = useState<boolean>(true);
+    const {isActive, setIsActive} = useContext(ActiveContext);
+
 
     const handleActiveState = () => {
         if (isActive) {
