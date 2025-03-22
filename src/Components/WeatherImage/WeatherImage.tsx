@@ -19,7 +19,9 @@ const getIcon = (condition: { text: string }) => {
         return ClearDayNight;
     } else if (condition.text === "Mist") {
         return Mist;
-    } 
+    } else {
+        return SunnyDay;
+    }
 }
 
 function WeatherImage({ condition }: WeatherInfo) {

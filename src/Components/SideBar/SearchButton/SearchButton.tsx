@@ -36,6 +36,8 @@ function SearchButtonIcon() {
                         wind_dir: response.data.current.wind_dir,
                         wind_kph: response.data.current.wind_kph,
                         wind_mph: response.data.current.wind_mph,
+                        uv: response.data.current.uv,
+                        visibility: response.data.current.vis_km,
                     },
                     location: {
                         country: response.data.location.country,

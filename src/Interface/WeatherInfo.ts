@@ -11,6 +11,8 @@ interface WeatherInfo {
         wind_dir: string;
         wind_kph: number;
         wind_mph: number;
+        uv: number;
+        visibility: number;
     },
     location: {
         country: string;
