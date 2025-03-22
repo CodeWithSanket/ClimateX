@@ -34,12 +34,7 @@ function UpperNavBar() {
                 >
                     Today
                 </button>
-                <button
-                    className={!isColour ? "text-blue-500 border-none bg-none text-[16px] font-bold text-[#495057] cursor-pointer capitalize" : "border-none bg-none text-[16px] font-semibold text-[#495057] cursor-pointer capitalize"}
-                    onClick={handleColourState}
-                >
-                    Week
-                </button>
+                
             </div>
 
             {/* Right Section: °C and °F Buttons */}
