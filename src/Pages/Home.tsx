@@ -1,6 +1,6 @@
 import MainData from "../Components/MainData/MainData";
 import SideBar from "../Components/SideBar/SideBar";
-import Dayimage from "/src/Assets/Dayimage.jpg";
+import Dayimage from "../Assets/Dayimage.jpg";
 import NightImage from "../Assets/NightImage.jpg";
 import { useContext } from "react";
 import DataContext from "../context/useDataContext";
